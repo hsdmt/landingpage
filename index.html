@@ -12,14 +12,34 @@
 </head>
 <body>
     <header class="hero">
-        <nav>
-            <div class="logo">Call Center Pro</div>
-            <div class="cta-button">Garanta sua Vaga</div>
-        </nav>
+        <div class="urgency-banner">
+            <i class="fas fa-clock"></i>
+            Últimas vagas disponíveis! Inscrições encerram em breve
+        </div>
         <div class="hero-content">
-            <h1>Transforme sua Liderança no Call Center</h1>
-            <p>Aprenda as estratégias mais eficientes de gestão e eleve o desempenho da sua equipe</p>
-            <button class="cta-button">Comece Agora</button>
+            <h1>Transforme sua Liderança em Resultados Extraordinários</h1>
+            <p>Domine as habilidades essenciais de gestão e multiplique a produtividade da sua equipe em até 40% em apenas 12 semanas</p>
+            <a href="#pricing" class="cta-button">
+                Quero Transformar Minha Gestão
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <i class="fas fa-check-circle"></i>
+                    <span>+1000 Gestores Formados</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-star"></i>
+                    <span>4.9/5 de Satisfação</span>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>7 Dias de Garantia</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
     </header>
 
@@ -74,7 +94,7 @@
         </div>
     </section>
 
-    <section class="pricing">
+    <section id="pricing" class="pricing">
         <h2>Escolha seu Plano</h2>
         <div class="pricing-grid">
             <div class="price-card">
@@ -126,97 +146,110 @@
         </div>
     </section>
 
+    <div class="floating-button">
+        <button class="cta-button" onclick="scrollToSection('pricing')">
+            <i class="fas fa-shopping-cart"></i>
+            Adquira Agora
+        </button>
+    </div>
+
     <section class="testimonials">
         <h2>O que nossos gestores dizem</h2>
-        <div class="testimonial-grid">
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="profile-image">
-                        <img src="images/Edgar.jfif" alt="Edgar Rodrigues">
+        <div class="testimonial-carousel">
+            <div class="testimonial-track">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="profile-image">
+                            <img src="images/Edgar.png" alt="Edgar Martins">
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
+                    <p>"O treinamento transformou minha gestão. Minha equipe aumentou a produtividade em 40% e reduziu o turnover em 60%."</p>
+                    <div class="author">Edgar Martins</div>
+                    <div class="position">Gerente de Operações</div>
                 </div>
-                <p>"O treinamento transformou minha gestão. Minha equipe aumentou a produtividade em 40% e reduziu o turnover em 60%."</p>
-                <div class="author">Edgar Rodrigues</div>
-                <div class="position">Gerente de Operações</div>
-            </div>
 
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="profile-image">
-                        <img src="images/Rafael.jfif" alt="Rafael Almeida">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="profile-image">
+                            <img src="images/Janete.png" alt="Janete Oliveira">
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
                     </div>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
+                    <p>"As estratégias aprendidas revolucionaram minha forma de liderar. Consegui promover três membros da equipe em apenas 6 meses."</p>
+                    <div class="author">Janete Oliveira</div>
+                    <div class="position">Supervisora de Atendimento</div>
                 </div>
-                <p>"As estratégias aprendidas revolucionaram minha forma de liderar. Consegui promover três membros da equipe em apenas 6 meses."</p>
-                <div class="author">Rafael Almeida</div>
-                <div class="position">Supervisor de Atendimento</div>
-            </div>
 
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="profile-image">
-                        <img src="images/Rodrigo.jfif" alt="Rodrigo Santos">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="profile-image">
+                            <img src="images/Rodrigo.png" alt="Rodrigo Santos">
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
+                    <p>"Implementei as técnicas de gestão e vi minha equipe alcançar as metas em tempo recorde. O ROI foi excepcional!"</p>
+                    <div class="author">Rodrigo Santos</div>
+                    <div class="position">Gerente de Customer Success</div>
                 </div>
-                <p>"Implementei as técnicas de gestão e vi minha equipe alcançar as metas em tempo recorde. O ROI foi excepcional!"</p>
-                <div class="author">Rodrigo Santos</div>
-                <div class="position">Gerente de Customer Success</div>
-            </div>
 
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="profile-image">
-                        <img src="images/Janete.jfif" alt="Janete Oliveira">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="profile-image">
+                            <img src="images/Rafael.png" alt="Rafael Mendes">
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
                     </div>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+                    <p>"O conteúdo prático e as mentorias me ajudaram a desenvolver habilidades essenciais para liderar minha equipe com excelência."</p>
+                    <div class="author">Rafael Mendes</div>
+                    <div class="position">Coordenador de Operações</div>
                 </div>
-                <p>"O conteúdo prático e as mentorias me ajudaram a desenvolver habilidades essenciais para liderar minha equipe com excelência."</p>
-                <div class="author">Janete Oliveira</div>
-                <div class="position">Coordenadora de Operações</div>
-            </div>
 
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="profile-image">
-                        <img src="images/Margarete.jfif" alt="Margarete Costa">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="profile-image">
+                            <img src="images/Margarete.png" alt="Margarete Costa">
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
                     </div>
-                    <div class="rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
+                    <p>"Excelente investimento! As técnicas de liderança e gestão de equipe mudaram completamente os resultados do meu time."</p>
+                    <div class="author">Margarete Costa</div>
+                    <div class="position">Supervisora Sênior</div>
                 </div>
-                <p>"Excelente investimento! As técnicas de liderança e gestão de equipe mudaram completamente os resultados do meu time."</p>
-                <div class="author">Margarete Costa</div>
-                <div class="position">Supervisora Sênior</div>
+            </div>
+            <div class="carousel-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
@@ -253,3 +286,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
