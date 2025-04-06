@@ -13,7 +13,7 @@ body {
 
 /* Header and Navigation */
 .hero {
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    background: linear-gradient(135deg, #ff0000, #cc0000);
     color: white;
     padding: 2rem;
     min-height: 100vh;
@@ -31,6 +31,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: white;
 }
 
 .hero-content {
@@ -47,39 +48,44 @@ nav {
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    color: white;
 }
 
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    color: white;
 }
 
 /* Buttons */
 .cta-button {
-    background-color: #ff6b6b;
+    background-color: #ff0000;
     color: white;
     padding: 1rem 2rem;
     border: none;
     border-radius: 50px;
     font-size: 1.1rem;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cta-button:hover {
     transform: scale(1.05);
+    background-color: #cc0000;
 }
 
 /* Benefits Section */
 .benefits {
     padding: 4rem 2rem;
-    background-color: #f8f9fa;
+    background-color: #f5f5f5;
 }
 
 .benefits h2 {
     text-align: center;
     margin-bottom: 3rem;
     font-size: 2.5rem;
+    color: #333;
 }
 
 .benefits-grid {
@@ -96,23 +102,26 @@ nav {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
 }
 
 .benefit-card i {
     font-size: 2.5rem;
-    color: #6e8efb;
+    color: #ff0000;
     margin-bottom: 1rem;
 }
 
 /* Course Details */
 .course-details {
     padding: 4rem 2rem;
+    background-color: white;
 }
 
 .course-details h2 {
     text-align: center;
     margin-bottom: 3rem;
     font-size: 2.5rem;
+    color: #333;
 }
 
 .modules {
@@ -124,13 +133,14 @@ nav {
 }
 
 .module {
-    background: #f8f9fa;
+    background: #f5f5f5;
     padding: 2rem;
     border-radius: 10px;
+    border: 1px solid #e0e0e0;
 }
 
 .module h3 {
-    color: #6e8efb;
+    color: #ff0000;
     margin-bottom: 1rem;
 }
 
@@ -140,63 +150,125 @@ nav {
 
 .module li {
     margin-bottom: 0.5rem;
+    color: #333;
 }
 
 /* Pricing Section */
 .pricing {
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
 }
 
 .pricing h2 {
     text-align: center;
     margin-bottom: 3rem;
     font-size: 2.5rem;
+    color: #333;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
 
 .price-card {
     background: white;
-    max-width: 500px;
-    margin: 0 auto;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+}
+
+.price-card.featured {
+    border: 2px solid #ff0000;
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.price-card.featured::before {
+    content: "Mais Popular";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff0000;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .price-header {
     margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.price-header h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
 }
 
 .price {
     font-size: 2.5rem;
-    color: #6e8efb;
+    color: #ff0000;
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 .installments {
     color: #666;
     margin-bottom: 1rem;
+    font-size: 0.9rem;
 }
 
 .price-features {
     list-style: none;
     margin-bottom: 2rem;
+    text-align: left;
 }
 
 .price-features li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.price-features i {
+    color: #ff0000;
+}
+
+.price-card .cta-button {
+    width: 100%;
+    margin-top: 1rem;
 }
 
 /* Testimonials */
 .testimonials {
     padding: 4rem 2rem;
+    background-color: white;
 }
 
 .testimonials h2 {
     text-align: center;
     margin-bottom: 3rem;
     font-size: 2.5rem;
+    color: #333;
 }
 
 .testimonial-grid {
@@ -208,22 +280,69 @@ nav {
 }
 
 .testimonial-card {
-    background: #f8f9fa;
+    background: #f5f5f5;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    border: 3px solid #ff0000;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rating {
+    color: #ffd700;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 1rem;
+    color: #333;
+    line-height: 1.6;
 }
 
 .author {
-    margin-top: 1rem;
     font-weight: bold;
-    color: #6e8efb;
+    color: #ff0000;
+    margin-bottom: 0.25rem;
+}
+
+.position {
+    color: #666;
+    font-size: 0.9rem;
 }
 
 /* Guarantee Section */
 .guarantee {
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    background: linear-gradient(135deg, #ff0000, #cc0000);
     color: white;
     text-align: center;
 }
@@ -236,6 +355,7 @@ nav {
 .guarantee i {
     font-size: 3rem;
     margin-bottom: 1rem;
+    color: white;
 }
 
 /* Footer */
@@ -255,6 +375,7 @@ footer {
 
 .footer-section h3 {
     margin-bottom: 1rem;
+    color: white;
 }
 
 .social-links {
@@ -266,6 +387,11 @@ footer {
 .social-links a {
     color: white;
     font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff0000;
 }
 
 .footer-bottom {
@@ -291,8 +417,21 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .price-card {
-        margin: 0 1rem;
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .price-card.featured {
+        transform: none;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .profile-image {
+        width: 80px;
+        height: 80px;
     }
 }
 
