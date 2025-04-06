@@ -115,21 +115,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 }); 
-const nomes = ["bruna", "edgar", "marina", "rodrigo", "yago"];
-const galeria = document.getElementById("galeria");
-
-nomes.forEach(nome => {
-  const card = document.createElement("div");
-  card.className = "card";
-
-  const imagem = document.createElement("img");
-  imagem.src = `imagens/${nome}.png`;
-  imagem.alt = nome;
-
-  const legenda = document.createElement("p");
-  legenda.textContent = nome.charAt(0).toUpperCase() + nome.slice(1);
-
-  card.appendChild(imagem);
-  card.appendChild(legenda);
-  galeria.appendChild(card);
-});
