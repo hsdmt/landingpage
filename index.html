@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Produtos - Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        .top-banner {
+            background: linear-gradient(90deg, #FFE5A3 0%, #FFB6C1 50%, #F5B6FF 100%);
+            padding: 1rem 0;
+            width: 100%;
+        }
+
+        .banner-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 0 1rem;
+        }
+
+        .banner-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .icon-circle {
+            background-color: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .banner-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .banner-title {
+            color: #6B00B3;
+            font-weight: bold;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        .banner-subtitle {
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .header {
+            background-color: #f8f9fa;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .store-name {
+            font-size: 2.5rem;
+            color: #333;
+        }
+
+        .main-content {
+            padding: 2rem;
+            min-height: calc(100vh - 100px);
+        }
+
+        .buy-button {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            padding: 1rem 2rem;
+            background-color: #FFB6C1;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #FFA0B4;
+        }
+
+        @media (max-width: 768px) {
+            .banner-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .banner-item {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-banner">
+        <div class="banner-container">
+            <div class="banner-item">
+                <div class="icon-circle">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <div class="banner-text">
+                    <span class="banner-title">ENTREGA RÁPIDA</span>
+                    <span class="banner-subtitle">Enviamos para todo o Brasil</span>
+                </div>
+            </div>
+            <div class="banner-item">
+                <div class="icon-circle">
+                    <i class="fas fa-credit-card"></i>
+                </div>
+                <div class="banner-text">
+                    <span class="banner-title">PARCELAMENTO</span>
+                    <span class="banner-subtitle">Até 12X no Cartão*</span>
+                </div>
+            </div>
+            <div class="banner-item">
+                <div class="icon-circle">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="banner-text">
+                    <span class="banner-title">COMPRA SEGURA</span>
+                    <span class="banner-subtitle">Site 100% seguro</span>
+                </div>
+            </div>
+            <div class="banner-item">
+                <div class="icon-circle">
+                    <i class="fas fa-percentage"></i>
+                </div>
+                <div class="banner-text">
+                    <span class="banner-title">PROGRAMA DE AFILIADOS</span>
+                    <span class="banner-subtitle">Afilie-se e comissão ganhe por venda</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <h1 class="store-name">Go Produtos</h1>
+    </header>
+
+    <main class="main-content">
+        <!-- Aqui você pode adicionar mais conteúdo da sua landing page -->
+    </main>
+
+    <button class="buy-button">Comprar agora</button>
+</body>
+</html>
