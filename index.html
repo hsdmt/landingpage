@@ -3,168 +3,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Go Produtos - Landing Page</title>
+    <title>Curso Online - Transforme sua Carreira</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            min-height: 100vh;
-            position: relative;
-        }
-
-        .top-banner {
-            background: linear-gradient(90deg, #FFE5A3 0%, #FFB6C1 50%, #F5B6FF 100%);
-            padding: 1rem 0;
-            width: 100%;
-        }
-
-        .banner-container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            max-width: 1200px;
-            margin: 0 auto;
-            flex-wrap: wrap;
-            gap: 1rem;
-            padding: 0 1rem;
-        }
-
-        .banner-item {
-            display: flex;
-            align-items: center;
-            gap: 0.8rem;
-        }
-
-        .icon-circle {
-            background-color: white;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .banner-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .banner-title {
-            color: #6B00B3;
-            font-weight: bold;
-            font-size: 1rem;
-            text-transform: uppercase;
-        }
-
-        .banner-subtitle {
-            color: #333;
-            font-size: 0.9rem;
-        }
-
-        .header {
-            background-color: #f8f9fa;
-            padding: 2rem;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        .store-name {
-            font-size: 2.5rem;
-            color: #333;
-        }
-
-        .main-content {
-            padding: 2rem;
-            min-height: calc(100vh - 100px);
-        }
-
-        .buy-button {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            padding: 1rem 2rem;
-            background-color: #FFB6C1;
-            color: #333;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .buy-button:hover {
-            background-color: #FFA0B4;
-        }
-
-        @media (max-width: 768px) {
-            .banner-container {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .banner-item {
-                justify-content: center;
-            }
-        }
-    </style>
 </head>
 <body>
-    <div class="top-banner">
-        <div class="banner-container">
-            <div class="banner-item">
-                <div class="icon-circle">
-                    <i class="fas fa-truck"></i>
-                </div>
-                <div class="banner-text">
-                    <span class="banner-title">ENTREGA RÁPIDA</span>
-                    <span class="banner-subtitle">Enviamos para todo o Brasil</span>
-                </div>
+    <header class="hero">
+        <nav>
+            <div class="logo">Curso Online</div>
+            <div class="cta-button">Garanta sua Vaga</div>
+        </nav>
+        <div class="hero-content">
+            <h1>Transforme sua Carreira com Nosso Curso Online</h1>
+            <p>Aprenda as habilidades mais demandadas do mercado e alcance seus objetivos profissionais</p>
+            <button class="cta-button">Comece Agora</button>
+        </div>
+    </header>
+
+    <section class="benefits">
+        <h2>O que você vai aprender</h2>
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Habilidades Práticas</h3>
+                <p>Aprenda com projetos reais e exercícios práticos</p>
             </div>
-            <div class="banner-item">
-                <div class="icon-circle">
-                    <i class="fas fa-credit-card"></i>
-                </div>
-                <div class="banner-text">
-                    <span class="banner-title">PARCELAMENTO</span>
-                    <span class="banner-subtitle">Até 12X no Cartão*</span>
-                </div>
+            <div class="benefit-card">
+                <i class="fas fa-certificate"></i>
+                <h3>Certificação</h3>
+                <p>Receba um certificado reconhecido no mercado</p>
             </div>
-            <div class="banner-item">
-                <div class="icon-circle">
-                    <i class="fas fa-lock"></i>
-                </div>
-                <div class="banner-text">
-                    <span class="banner-title">COMPRA SEGURA</span>
-                    <span class="banner-subtitle">Site 100% seguro</span>
-                </div>
+            <div class="benefit-card">
+                <i class="fas fa-users"></i>
+                <h3>Comunidade</h3>
+                <p>Faça parte de uma comunidade de alunos</p>
             </div>
-            <div class="banner-item">
-                <div class="icon-circle">
-                    <i class="fas fa-percentage"></i>
-                </div>
-                <div class="banner-text">
-                    <span class="banner-title">PROGRAMA DE AFILIADOS</span>
-                    <span class="banner-subtitle">Afilie-se e comissão ganhe por venda</span>
+        </div>
+    </section>
+
+    <section class="course-details">
+        <h2>Conteúdo do Curso</h2>
+        <div class="modules">
+            <div class="module">
+                <h3>Módulo 1: Fundamentos</h3>
+                <ul>
+                    <li>Introdução ao tema</li>
+                    <li>Conceitos básicos</li>
+                    <li>Primeiros passos</li>
+                </ul>
+            </div>
+            <div class="module">
+                <h3>Módulo 2: Intermediário</h3>
+                <ul>
+                    <li>Técnicas avançadas</li>
+                    <li>Projetos práticos</li>
+                    <li>Melhores práticas</li>
+                </ul>
+            </div>
+            <div class="module">
+                <h3>Módulo 3: Avançado</h3>
+                <ul>
+                    <li>Cases reais</li>
+                    <li>Otimização</li>
+                    <li>Projeto final</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <h2>Investimento</h2>
+        <div class="price-card">
+            <div class="price-header">
+                <h3>Curso Completo</h3>
+                <p class="price">R$ 497,00</p>
+                <p class="installments">ou 12x de R$ 49,90</p>
+            </div>
+            <ul class="price-features">
+                <li>Acesso vitalício</li>
+                <li>Certificado digital</li>
+                <li>Suporte exclusivo</li>
+                <li>Materiais complementares</li>
+            </ul>
+            <button class="cta-button">Matricule-se Agora</button>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>O que nossos alunos dizem</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"O curso superou minhas expectativas. Aprendi muito e já consegui aplicar no meu trabalho."</p>
+                <div class="author">- João Silva</div>
+            </div>
+            <div class="testimonial-card">
+                <p>"Metodologia excelente e professores muito atenciosos. Recomendo para todos!"</p>
+                <div class="author">- Maria Santos</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="guarantee">
+        <div class="guarantee-content">
+            <i class="fas fa-shield-alt"></i>
+            <h2>Garantia de 7 Dias</h2>
+            <p>Se você não ficar satisfeito com o curso, devolvemos 100% do seu investimento.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Email: contato@cursoonline.com</p>
+                <p>WhatsApp: (11) 99999-9999</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Curso Online. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
-    <header class="header">
-        <h1 class="store-name">Go Produtos</h1>
-    </header>
-
-    <main class="main-content">
-        <!-- Aqui você pode adicionar mais conteúdo da sua landing page -->
-    </main>
-
-    <button class="buy-button">Comprar agora</button>
+    <script src="script.js"></script>
 </body>
 </html>
