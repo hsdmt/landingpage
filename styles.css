@@ -451,6 +451,9 @@ body {
     border: 1px solid #e0e0e0;
     transition: transform 0.3s ease;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .price-card:hover {
@@ -506,6 +509,7 @@ body {
     list-style: none;
     margin-bottom: 2rem;
     text-align: left;
+    flex-grow: 1;
 }
 
 .price-features li {
@@ -522,7 +526,7 @@ body {
 
 .price-card .cta-button {
     width: 100%;
-    margin-top: 1rem;
+    margin-top: auto;
 }
 
 /* Testimonials */
